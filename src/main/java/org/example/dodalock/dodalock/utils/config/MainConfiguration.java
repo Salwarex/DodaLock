@@ -28,7 +28,7 @@ public class MainConfiguration {
             setup();
         }
         else fileConfiguration = YamlConfiguration.loadConfiguration(file);
-        getFileConfiguration().options().copyDefaults(true);
+        //getFileConfiguration().options().copyDefaults(true);
 
         save();
         reload();

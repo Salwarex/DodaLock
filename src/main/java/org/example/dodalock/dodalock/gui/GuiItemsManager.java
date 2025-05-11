@@ -4,7 +4,10 @@ import org.bukkit.Material;
 import org.example.dodalock.dodalock.items.CustomItem;
 
 public class GuiItemsManager {
-    private static final Material material = Material.SHULKER_SHELL;
+    private static final Material material = Material.GRAY_STAINED_GLASS_PANE;
+    private static final Material material_button_code = Material.LIGHT_BLUE_STAINED_GLASS_PANE;
+    private static final Material material_button_enter = Material.GREEN_STAINED_GLASS_PANE;
+    private static final Material material_button_cancel = Material.RED_STAINED_GLASS_PANE;
     private static CustomItem inventoryPart;
     private static CustomItem inventoryButton0;
     private static CustomItem inventoryButton1;
@@ -36,33 +39,33 @@ public class GuiItemsManager {
 
     public static void initializeGuiItems() {
         inventoryPart = new CustomItem(material, 1, "gui.plug");
-        inventoryButton0 = new CustomItem(material, 2, "gui.number_0");
-        inventoryButton1 = new CustomItem(material, 3, "gui.number_1");
-        inventoryButton2 = new CustomItem(material, 4, "gui.number_2");
-        inventoryButton3 = new CustomItem(material, 5, "gui.number_3");
-        inventoryButton4 = new CustomItem(material, 6, "gui.number_4");
-        inventoryButton5 = new CustomItem(material, 7, "gui.number_5");
-        inventoryButton6 = new CustomItem(material, 8, "gui.number_6");
-        inventoryButton7 = new CustomItem(material, 9, "gui.number_7");
-        inventoryButton8 = new CustomItem(material, 10, "gui.number_8");
-        inventoryButton9 = new CustomItem(material, 11, "gui.number_9");
+        inventoryButton0 = new CustomItem(material_button_code, 2, "gui.number_0");
+        inventoryButton1 = new CustomItem(material_button_code, 3, "gui.number_1");
+        inventoryButton2 = new CustomItem(material_button_code, 4, "gui.number_2");
+        inventoryButton3 = new CustomItem(material_button_code, 5, "gui.number_3");
+        inventoryButton4 = new CustomItem(material_button_code, 6, "gui.number_4");
+        inventoryButton5 = new CustomItem(material_button_code, 7, "gui.number_5");
+        inventoryButton6 = new CustomItem(material_button_code, 8, "gui.number_6");
+        inventoryButton7 = new CustomItem(material_button_code, 9, "gui.number_7");
+        inventoryButton8 = new CustomItem(material_button_code, 10, "gui.number_8");
+        inventoryButton9 = new CustomItem(material_button_code, 11, "gui.number_9");
         inventoryPartWithBorderLeft = new CustomItem(material, 12, "gui.plug");
         inventoryPartWithBorderUp = new CustomItem(material, 13, "gui.plug");
         inventoryPartWithBorderLeftUp = new CustomItem(material, 14, "gui.plug");
         inventoryPartWithBorderDotLeftUp = new CustomItem(material, 15, "gui.plug");
         inventoryField = new CustomItem(material, 16, "gui.plug");
-        inventoryField0 = new CustomItem(material, 17, "gui.number_0");
-        inventoryField1 = new CustomItem(material, 18, "gui.number_1");
-        inventoryField2 = new CustomItem(material, 19, "gui.number_2");
-        inventoryField3 = new CustomItem(material, 20, "gui.number_3");
-        inventoryField4 = new CustomItem(material, 21, "gui.number_4");
-        inventoryField5 = new CustomItem(material, 22, "gui.number_5");
-        inventoryField6 = new CustomItem(material, 23, "gui.number_6");
-        inventoryField7 = new CustomItem(material, 24, "gui.number_7");
-        inventoryField8 = new CustomItem(material, 25, "gui.number_8");
-        inventoryField9 = new CustomItem(material, 26, "gui.number_9");
-        inventoryButtonE = new CustomItem(material, 27, "gui.enter");
-        inventoryButtonC = new CustomItem(material, 28, "gui.clear");
+        inventoryField0 = new CustomItem(material_button_code, 17, "gui.number_0");
+        inventoryField1 = new CustomItem(material_button_code, 18, "gui.number_1");
+        inventoryField2 = new CustomItem(material_button_code, 19, "gui.number_2");
+        inventoryField3 = new CustomItem(material_button_code, 20, "gui.number_3");
+        inventoryField4 = new CustomItem(material_button_code, 21, "gui.number_4");
+        inventoryField5 = new CustomItem(material_button_code, 22, "gui.number_5");
+        inventoryField6 = new CustomItem(material_button_code, 23, "gui.number_6");
+        inventoryField7 = new CustomItem(material_button_code, 24, "gui.number_7");
+        inventoryField8 = new CustomItem(material_button_code, 25, "gui.number_8");
+        inventoryField9 = new CustomItem(material_button_code, 26, "gui.number_9");
+        inventoryButtonE = new CustomItem(material_button_enter, 27, "gui.enter");
+        inventoryButtonC = new CustomItem(material_button_cancel, 28, "gui.clear");
     }
 
     public static CustomItem getInventoryPart() { return inventoryPart; }

@@ -34,6 +34,7 @@ public class CustomItem {
     }
 
     private void createItemMeta(int customModelData, String key) {
+        itemStack.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1);
         ItemMeta itemMeta = itemStack.getItemMeta();
         itemMeta.setCustomModelData(customModelData);
         itemMeta.setDisplayName(ChatColor.RESET + Configurations.getLanguage().translate(key));
@@ -41,9 +42,9 @@ public class CustomItem {
         itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_DESTROYS, ItemFlag.HIDE_UNBREAKABLE);
         if (key.contains("master_key")) {
             itemMeta.addEnchant(Enchantment.ARROW_KNOCKBACK, 1, true);
-            itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
             itemMeta.setLore(Arrays.asList(Configurations.getLanguage().translate("master_key_lore")));
         }
+        itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         itemStack.setItemMeta(itemMeta);
     }
 

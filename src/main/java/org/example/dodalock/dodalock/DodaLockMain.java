@@ -20,7 +20,7 @@ public final class DodaLockMain extends JavaPlugin {
     public void onEnable() {
         PLUGIN = this;
 
-        getConfig().options().copyDefaults();
+        //getConfig().options().copyDefaults();
         Configurations.setup();
 
         registerEvents();

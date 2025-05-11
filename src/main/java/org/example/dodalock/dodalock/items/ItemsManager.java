@@ -10,8 +10,8 @@ import org.example.dodalock.dodalock.utils.FormattableUtils;
 import org.example.dodalock.dodalock.utils.config.Configurations;
 
 public class ItemsManager {
-    private static final Material locksMaterial = Material.BOOK;
-    private static final Material keysMaterial = Material.WOODEN_HOE;
+    private static final Material locksMaterial = Material.IRON_INGOT;
+    private static final Material keysMaterial = Material.IRON_NUGGET;
 
     private static CustomItem codeLock;
     private static CustomItem lock;
